@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXSlider?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.media.MediaView?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="parent" onMouseClicked="#FullScreen" onMouseMoved="#showController" prefHeight="630.0" prefWidth="1045.0" style="-fx-background-color: linear-gradient(#000000,#434343);" styleClass="parent" stylesheets="@style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="netfreex2.pkg0.VideoPlayerController">
+   <children>
+      <StackPane onMouseClicked="#FullScreen" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="630.0" prefWidth="977.0">
+               <bottom>
+                  <VBox id="controller" fx:id="controllers" onMouseEntered="#showController" onMouseExited="#hideController" onMouseMoved="#showController" prefHeight="102.0" prefWidth="1045.0" BorderPane.alignment="TOP_CENTER">
+                     <children>
+                        <AnchorPane>
+                           <children>
+                              <JFXSlider fx:id="seekSlider" layoutY="1.0" prefHeight="14.0" prefWidth="1045.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                           </children>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </AnchorPane>
+                        <HBox id="contr" alignment="CENTER" prefHeight="87.0" prefWidth="1045.0">
+                           <children>
+                              <JFXButton fx:id="btnBack" onMouseClicked="#back" prefHeight="37.0" prefWidth="62.0" text="  " />
+                              <JFXButton fx:id="openFile" onAction="#handleButtonAction" prefHeight="54.0" prefWidth="68.0" text="  ">
+                                 <HBox.margin>
+                                    <Insets right="30.0" />
+                                 </HBox.margin>
+                              </JFXButton>
+                              <Label fx:id="lblTime" alignment="CENTER" contentDisplay="CENTER" prefHeight="30.0" prefWidth="100.0" text="Label" textAlignment="CENTER" textFill="WHITE">
+                                 <font>
+                                    <Font name="CoolveticaRg-Regular" size="21.0" />
+                                 </font>
+                              </Label>
+                              <JFXButton fx:id="btnBack2" onAction="#slowerVideo" prefHeight="58.0" prefWidth="44.0" text="  ">
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </JFXButton>
+                              <JFXButton fx:id="btnBack1" onAction="#slowVideo" prefHeight="56.0" prefWidth="54.0" text="  " />
+                              <AnchorPane>
+                                 <children>
+                                    <JFXButton fx:id="btnPause" onAction="#pauseVideo" prefHeight="50.0" prefWidth="59.0" text="  " />
+                                    <JFXButton fx:id="btnPlay" onAction="#playVideo" prefHeight="50.0" prefWidth="59.0" text="  " />
+                                 </children>
+                              </AnchorPane>
+                              <JFXButton fx:id="btnFast1" onAction="#fastVideo" prefHeight="56.0" prefWidth="57.0" text="  " />
+                              <JFXButton fx:id="btnFast2" onAction="#fasterVideo" prefHeight="57.0" prefWidth="55.0" text="  " />
+                              <JFXButton fx:id="btnStop" onAction="#stopVideo" prefHeight="25.0" prefWidth="67.0" text=" " />
+                              <ImageView fitHeight="46.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../images2/vol.png" />
+                                 </image>
+                              </ImageView>
+                              <JFXSlider fx:id="slider" />
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="10.0" top="10.0" />
+                           </VBox.margin>
+                        </HBox>
+                     </children>
+                     <BorderPane.margin>
+                        <Insets />
+                     </BorderPane.margin>
+                  </VBox>
+               </bottom>
+               <center>
+                  <AnchorPane prefHeight="557.0" prefWidth="1045.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <MediaView fx:id="mediaView" fitHeight="500.0" fitWidth="1045.0" nodeOrientation="INHERIT" />
+                     </children>
+                  </AnchorPane>
+               </center>
+               <top>
+                  <AnchorPane prefHeight="44.0" prefWidth="1045.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <ImageView id="minimize" fx:id="minimize" fitHeight="22.0" fitWidth="22.0" layoutX="947.0" layoutY="10.0" onMouseClicked="#minimize" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="76.0">
+                           <image>
+                              <Image url="@../../images/close.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView id="maximize" fitHeight="22.0" fitWidth="22.0" layoutX="974.0" layoutY="10.0" onMouseClicked="#maximize" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="48.0">
+                           <image>
+                              <Image url="@../../images/maximizee.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="22.0" fitWidth="22.0" layoutX="1001.0" layoutY="10.0" onMouseClicked="#close_app" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="22.0">
+                           <image>
+                              <Image url="@../../images/minimizee.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+               </top>
+            </BorderPane>
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>

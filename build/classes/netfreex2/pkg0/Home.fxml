@@ -1,0 +1,1116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="parent" prefHeight="630.0" prefWidth="1045.0" style="-fx-background-color: black;" styleClass="parent" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="netfreex2.pkg0.HomeController">
+   <children>
+      <AnchorPane prefHeight="632.0" prefWidth="247.0" style="-fx-background-color: #20221f; -fx-border-color: #88c234;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox layoutX="-2.0" layoutY="152.0" prefHeight="304.0" prefWidth="247.0">
+               <children>
+                  <JFXButton fx:id="btn_home" alignment="BASELINE_LEFT" onAction="#handleButtonAction" prefHeight="43.0" prefWidth="248.0" text="    Home" textFill="WHITE">
+                     <font>
+                        <Font name="CoolveticaRg-Regular" size="15.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="29.0" fitWidth="73.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../images2/home.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="btn_CW" alignment="BASELINE_LEFT" onAction="#handleButtonAction" prefHeight="6.0" prefWidth="246.0" text="    Continue Watching" textFill="WHITE">
+                     <font>
+                        <Font name="CoolveticaRg-Regular" size="15.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../images2/continue.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="btn_movies" alignment="BASELINE_LEFT" onAction="#handleButtonAction" prefHeight="6.0" prefWidth="246.0" text="   Movies" textFill="WHITE">
+                     <font>
+                        <Font name="CoolveticaRg-Regular" size="16.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="32.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../images2/movie.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="btn_series" alignment="BASELINE_LEFT" onAction="#handleButtonAction" prefHeight="6.0" prefWidth="246.0" text=" Series" textFill="WHITE">
+                     <font>
+                        <Font name="CoolveticaRg-Regular" size="15.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="32.0" fitWidth="59.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../images2/tvseries.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="btn_watched" alignment="BASELINE_LEFT" onAction="#handleButtonAction" prefHeight="6.0" prefWidth="246.0" text=" Watched" textFill="WHITE">
+                     <font>
+                        <Font name="CoolveticaRg-Regular" size="15.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="35.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../images/Achieve_1.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="btn_settings" alignment="BASELINE_LEFT" onAction="#handleButtonAction" prefHeight="42.0" prefWidth="246.0" text=" Settings" textFill="WHITE">
+                     <font>
+                        <Font name="CoolveticaRg-Regular" size="15.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="100.0" />
+                     </VBox.margin>
+                     <graphic>
+                        <ImageView fitHeight="46.0" fitWidth="53.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../images2/Settings.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="btn_help" alignment="BASELINE_LEFT" onAction="#handleButtonAction" prefHeight="42.0" prefWidth="246.0" text="   Help" textFill="WHITE">
+                     <font>
+                        <Font name="CoolveticaRg-Regular" size="15.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="31.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../images2/help.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </VBox>
+            <ImageView fitHeight="71.0" fitWidth="198.0" layoutX="23.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/netfreex.png" />
+               </image>
+               <effect>
+                  <Reflection fraction="0.11" />
+               </effect>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="247.0" layoutY="39.0" prefHeight="591.0" prefWidth="797.0" style="-fx-background-color: linear-gradient(#000000,#434343);" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="248.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="39.0">
+         <children>
+            <AnchorPane fx:id="pnl_settings" layoutX="10.0" layoutY="10.0" prefHeight="591.0" prefWidth="797.0" style="-fx-background-color: linear-gradient(#000000,#434343);" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Label layoutX="39.0" layoutY="36.0" text="Settings" textFill="WHITE">
+                     <font>
+                        <Font name="CoolveticaRg-Regular" size="25.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <ScrollPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <content>
+                  <AnchorPane fx:id="pnl_CW" prefHeight="716.0" prefWidth="797.0" style="-fx-background-color: linear-gradient(#000000,#434343);">
+                     <children>
+                        <Label layoutX="39.0" layoutY="36.0" text="Continue Watching" textFill="WHITE">
+                           <font>
+                              <Font name="CoolveticaRg-Regular" size="25.0" />
+                           </font>
+                        </Label>
+                        <HBox layoutX="79.0" layoutY="495.0">
+                           <children>
+                              <AnchorPane style="-fx-background-color: white;">
+                                 <children>
+                                    <ImageView fitHeight="183.0" fitWidth="159.0" pickOnBounds="true" preserveRatio="true" />
+                                    <JFXButton layoutX="115.0" layoutY="5.0" onMouseClicked="#OpenForm" opacity="0.52" prefHeight="31.0" prefWidth="39.0" style="-fx-background-color: black;" text="+" textFill="WHITE">
+                                       <font>
+                                          <Font size="17.0" />
+                                       </font>
+                                    </JFXButton>
+                                 </children>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <HBox.margin>
+                                    <Insets right="10.0" />
+                                 </HBox.margin>
+                              </AnchorPane>
+                              <AnchorPane layoutX="10.0" layoutY="10.0" style="-fx-background-color: white;">
+                                 <children>
+                                    <ImageView fitHeight="183.0" fitWidth="159.0" pickOnBounds="true" preserveRatio="true" />
+                                    <JFXButton layoutX="115.0" layoutY="5.0" onMouseClicked="#OpenForm" opacity="0.52" prefHeight="31.0" prefWidth="39.0" style="-fx-background-color: black;" text="+" textFill="WHITE">
+                                       <font>
+                                          <Font size="17.0" />
+                                       </font>
+                                    </JFXButton>
+                                 </children>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <HBox.margin>
+                                    <Insets right="10.0" />
+                                 </HBox.margin>
+                              </AnchorPane>
+                              <AnchorPane layoutX="179.0" layoutY="10.0" style="-fx-background-color: white;">
+                                 <children>
+                                    <ImageView fitHeight="183.0" fitWidth="159.0" pickOnBounds="true" preserveRatio="true" />
+                                    <JFXButton layoutX="115.0" layoutY="5.0" onMouseClicked="#OpenForm" opacity="0.52" prefHeight="31.0" prefWidth="39.0" style="-fx-background-color: black;" text="+" textFill="WHITE">
+                                       <font>
+                                          <Font size="17.0" />
+                                       </font>
+                                    </JFXButton>
+                                 </children>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                              </AnchorPane>
+                              <AnchorPane layoutX="348.0" layoutY="10.0" style="-fx-background-color: white;">
+                                 <children>
+                                    <ImageView fitHeight="183.0" fitWidth="159.0" pickOnBounds="true" preserveRatio="true" />
+                                    <JFXButton layoutX="115.0" layoutY="5.0" onMouseClicked="#OpenForm" opacity="0.52" prefHeight="31.0" prefWidth="39.0" style="-fx-background-color: black;" text="+" textFill="WHITE">
+                                       <font>
+                                          <Font size="17.0" />
+                                       </font>
+                                    </JFXButton>
+                                 </children>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </AnchorPane>
+                           </children>
+                        </HBox>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </ScrollPane>
+            <HBox layoutX="80.0" layoutY="105.0">
+               <children>
+                  <AnchorPane style="-fx-background-color: white;">
+                     <children>
+                        <ImageView fitHeight="183.0" fitWidth="159.0" pickOnBounds="true" preserveRatio="true" />
+                        <JFXButton layoutX="115.0" layoutY="5.0" onMouseClicked="#OpenForm" opacity="0.52" prefHeight="31.0" prefWidth="39.0" style="-fx-background-color: black;" text="+" textFill="WHITE">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </AnchorPane>
+                  <AnchorPane layoutX="10.0" layoutY="10.0" style="-fx-background-color: white;">
+                     <children>
+                        <ImageView fitHeight="183.0" fitWidth="159.0" pickOnBounds="true" preserveRatio="true" />
+                        <JFXButton layoutX="115.0" layoutY="5.0" onMouseClicked="#OpenForm" opacity="0.52" prefHeight="31.0" prefWidth="39.0" style="-fx-background-color: black;" text="+" textFill="WHITE">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </AnchorPane>
+                  <AnchorPane layoutX="179.0" layoutY="10.0" style="-fx-background-color: white;">
+                     <children>
+                        <ImageView fitHeight="183.0" fitWidth="159.0" pickOnBounds="true" preserveRatio="true" />
+                        <JFXButton layoutX="115.0" layoutY="5.0" onMouseClicked="#OpenForm" opacity="0.52" prefHeight="31.0" prefWidth="39.0" style="-fx-background-color: black;" text="+" textFill="WHITE">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </AnchorPane>
+                  <AnchorPane layoutX="348.0" layoutY="10.0" style="-fx-background-color: white;">
+                     <children>
+                        <ImageView fitHeight="183.0" fitWidth="159.0" pickOnBounds="true" preserveRatio="true" />
+                        <JFXButton layoutX="115.0" layoutY="5.0" onMouseClicked="#OpenForm" opacity="0.52" prefHeight="31.0" prefWidth="39.0" style="-fx-background-color: black;" text="+" textFill="WHITE">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </AnchorPane>
+               </children>
+            </HBox>
+            <HBox layoutX="80.0" layoutY="305.0">
+               <children>
+                  <AnchorPane style="-fx-background-color: white;">
+                     <children>
+                        <ImageView fitHeight="183.0" fitWidth="159.0" pickOnBounds="true" preserveRatio="true" />
+                        <JFXButton layoutX="115.0" layoutY="5.0" onMouseClicked="#OpenForm" opacity="0.52" prefHeight="31.0" prefWidth="39.0" style="-fx-background-color: black;" text="+" textFill="WHITE">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </AnchorPane>
+                  <AnchorPane layoutX="10.0" layoutY="10.0" style="-fx-background-color: white;">
+                     <children>
+                        <ImageView fitHeight="183.0" fitWidth="159.0" pickOnBounds="true" preserveRatio="true" />
+                        <JFXButton layoutX="115.0" layoutY="5.0" onMouseClicked="#OpenForm" opacity="0.52" prefHeight="31.0" prefWidth="39.0" style="-fx-background-color: black;" text="+" textFill="WHITE">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </AnchorPane>
+                  <AnchorPane layoutX="179.0" layoutY="10.0" style="-fx-background-color: white;">
+                     <children>
+                        <ImageView fitHeight="183.0" fitWidth="159.0" pickOnBounds="true" preserveRatio="true" />
+                        <JFXButton layoutX="115.0" layoutY="5.0" onMouseClicked="#OpenForm" opacity="0.52" prefHeight="31.0" prefWidth="39.0" style="-fx-background-color: black;" text="+" textFill="WHITE">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </AnchorPane>
+                  <AnchorPane layoutX="348.0" layoutY="10.0" style="-fx-background-color: white;">
+                     <children>
+                        <ImageView fitHeight="183.0" fitWidth="159.0" pickOnBounds="true" preserveRatio="true" />
+                        <JFXButton layoutX="115.0" layoutY="5.0" onMouseClicked="#OpenForm" opacity="0.52" prefHeight="31.0" prefWidth="39.0" style="-fx-background-color: black;" text="+" textFill="WHITE">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </AnchorPane>
+               </children>
+            </HBox>
+            <AnchorPane fx:id="pnl_help" prefHeight="591.0" prefWidth="797.0" style="-fx-background-color: linear-gradient(#000000,#434343);" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Label layoutX="39.0" layoutY="36.0" text="Help" textFill="WHITE">
+                     <font>
+                        <Font name="CoolveticaRg-Regular" size="25.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="62.0" layoutY="102.0" text="What is NetFreex?" textFill="#f5dcdc">
+                     <font>
+                        <Font name="CoolveticaRg-Regular" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="74.0" layoutY="133.0" prefHeight="22.0" prefWidth="650.0" text="NetFreex is an offline video player that offers a lot of unique features suited for individuals" textFill="#f5dcdc">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="75.0" layoutY="154.0" prefHeight="22.0" prefWidth="650.0" text="who loves to binge watch series and/or movies." textFill="#f5dcdc">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="62.0" layoutY="203.0" text="Upload Your Downloaded Videos/Movies/TV Series" textFill="#f5dcdc">
+                     <font>
+                        <Font name="CoolveticaRg-Regular" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="74.0" layoutY="233.0" prefHeight="22.0" prefWidth="650.0" text="You can import your downloaded videos to enjoy the unique features NetFreex can offer." textFill="#f5dcdc">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="75.0" layoutY="258.0" prefHeight="22.0" prefWidth="650.0" text="1. Go to Home Menu located at the top-right side of the panel." textFill="#f5dcdc">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="75.0" layoutY="280.0" prefHeight="22.0" prefWidth="650.0" text="2. Enter the Title of the Video and Select if it is a Movie or one of the TV Series." textFill="#f5dcdc">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="76.0" layoutY="301.0" prefHeight="22.0" prefWidth="650.0" text="3. Choose/Upload a video icon." textFill="#f5dcdc">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="76.0" layoutY="322.0" prefHeight="22.0" prefWidth="650.0" text="4. Click the Select File button to select the video that you want to upload." textFill="#f5dcdc">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="76.0" layoutY="343.0" prefHeight="22.0" prefWidth="650.0" text="5. Click Upload." textFill="#f5dcdc">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <JFXButton layoutX="70.0" layoutY="451.0" onMouseClicked="#OpenPlayer" prefHeight="53.0" prefWidth="354.0" style="-fx-border-color: #88c234; -fx-background-color: #20221f;" text="Open Independent Video Player" textFill="WHITE">
+                     <font>
+                        <Font name="CoolveticaRg-Regular" size="21.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </AnchorPane>
+            <ScrollPane fx:id="pnl_watched" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <content>
+                  <AnchorPane prefHeight="591.0" prefWidth="797.0" style="-fx-background-color: linear-gradient(#000000,#434343);">
+                     <children>
+                        <Label layoutX="39.0" layoutY="36.0" text="Watched Movies/Series" textFill="WHITE">
+                           <font>
+                              <Font name="CoolveticaRg-Regular" size="25.0" />
+                           </font>
+                        </Label>
+                        <HBox layoutX="68.0" layoutY="98.0">
+                           <children>
+                              <AnchorPane style="-fx-background-color: white;">
+                                 <children>
+                                    <ImageView fitHeight="183.0" fitWidth="159.0" pickOnBounds="true" preserveRatio="true" />
+                                    <JFXButton layoutX="115.0" layoutY="5.0" onMouseClicked="#OpenForm" opacity="0.52" prefHeight="31.0" prefWidth="39.0" style="-fx-background-color: black;" text="+" textFill="WHITE">
+                                       <font>
+                                          <Font size="17.0" />
+                                       </font>
+                                    </JFXButton>
+                                 </children>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <HBox.margin>
+                                    <Insets right="10.0" />
+                                 </HBox.margin>
+                              </AnchorPane>
+                              <AnchorPane layoutX="10.0" layoutY="10.0" style="-fx-background-color: white;">
+                                 <children>
+                                    <ImageView fitHeight="183.0" fitWidth="159.0" pickOnBounds="true" preserveRatio="true" />
+                                    <JFXButton layoutX="115.0" layoutY="5.0" onMouseClicked="#OpenForm" opacity="0.52" prefHeight="31.0" prefWidth="39.0" style="-fx-background-color: black;" text="+" textFill="WHITE">
+                                       <font>
+                                          <Font size="17.0" />
+                                       </font>
+                                    </JFXButton>
+                                 </children>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <HBox.margin>
+                                    <Insets right="10.0" />
+                                 </HBox.margin>
+                              </AnchorPane>
+                              <AnchorPane layoutX="179.0" layoutY="10.0" style="-fx-background-color: white;">
+                                 <children>
+                                    <ImageView fitHeight="183.0" fitWidth="159.0" pickOnBounds="true" preserveRatio="true" />
+                                    <JFXButton layoutX="115.0" layoutY="5.0" onMouseClicked="#OpenForm" opacity="0.52" prefHeight="31.0" prefWidth="39.0" style="-fx-background-color: black;" text="+" textFill="WHITE">
+                                       <font>
+                                          <Font size="17.0" />
+                                       </font>
+                                    </JFXButton>
+                                 </children>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                              </AnchorPane>
+                              <AnchorPane layoutX="348.0" layoutY="10.0" style="-fx-background-color: white;">
+                                 <children>
+                                    <ImageView fitHeight="183.0" fitWidth="159.0" pickOnBounds="true" preserveRatio="true" />
+                                    <JFXButton layoutX="115.0" layoutY="5.0" onMouseClicked="#OpenForm" opacity="0.52" prefHeight="31.0" prefWidth="39.0" style="-fx-background-color: black;" text="+" textFill="WHITE">
+                                       <font>
+                                          <Font size="17.0" />
+                                       </font>
+                                    </JFXButton>
+                                 </children>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </AnchorPane>
+                           </children>
+                        </HBox>
+                        <HBox layoutX="70.0" layoutY="296.0">
+                           <children>
+                              <AnchorPane style="-fx-background-color: white;">
+                                 <children>
+                                    <ImageView fitHeight="183.0" fitWidth="159.0" pickOnBounds="true" preserveRatio="true" />
+                                    <JFXButton layoutX="115.0" layoutY="5.0" onMouseClicked="#OpenForm" opacity="0.52" prefHeight="31.0" prefWidth="39.0" style="-fx-background-color: black;" text="+" textFill="WHITE">
+                                       <font>
+                                          <Font size="17.0" />
+                                       </font>
+                                    </JFXButton>
+                                 </children>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <HBox.margin>
+                                    <Insets right="10.0" />
+                                 </HBox.margin>
+                              </AnchorPane>
+                              <AnchorPane layoutX="10.0" layoutY="10.0" style="-fx-background-color: white;">
+                                 <children>
+                                    <ImageView fitHeight="183.0" fitWidth="159.0" pickOnBounds="true" preserveRatio="true" />
+                                    <JFXButton layoutX="115.0" layoutY="5.0" onMouseClicked="#OpenForm" opacity="0.52" prefHeight="31.0" prefWidth="39.0" style="-fx-background-color: black;" text="+" textFill="WHITE">
+                                       <font>
+                                          <Font size="17.0" />
+                                       </font>
+                                    </JFXButton>
+                                 </children>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <HBox.margin>
+                                    <Insets right="10.0" />
+                                 </HBox.margin>
+                              </AnchorPane>
+                              <AnchorPane layoutX="179.0" layoutY="10.0" style="-fx-background-color: white;">
+                                 <children>
+                                    <ImageView fitHeight="183.0" fitWidth="159.0" pickOnBounds="true" preserveRatio="true" />
+                                    <JFXButton layoutX="115.0" layoutY="5.0" onMouseClicked="#OpenForm" opacity="0.52" prefHeight="31.0" prefWidth="39.0" style="-fx-background-color: black;" text="+" textFill="WHITE">
+                                       <font>
+                                          <Font size="17.0" />
+                                       </font>
+                                    </JFXButton>
+                                 </children>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                              </AnchorPane>
+                              <AnchorPane layoutX="348.0" layoutY="10.0" style="-fx-background-color: white;">
+                                 <children>
+                                    <ImageView fitHeight="183.0" fitWidth="159.0" pickOnBounds="true" preserveRatio="true" />
+                                    <JFXButton layoutX="115.0" layoutY="5.0" onMouseClicked="#OpenForm" opacity="0.52" prefHeight="31.0" prefWidth="39.0" style="-fx-background-color: black;" text="+" textFill="WHITE">
+                                       <font>
+                                          <Font size="17.0" />
+                                       </font>
+                                    </JFXButton>
+                                 </children>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </AnchorPane>
+                           </children>
+                        </HBox>
+                        <HBox layoutX="72.0" layoutY="494.0">
+                           <children>
+                              <AnchorPane style="-fx-background-color: white;">
+                                 <children>
+                                    <ImageView fitHeight="183.0" fitWidth="159.0" pickOnBounds="true" preserveRatio="true" />
+                                    <JFXButton layoutX="115.0" layoutY="5.0" onMouseClicked="#OpenForm" opacity="0.52" prefHeight="31.0" prefWidth="39.0" style="-fx-background-color: black;" text="+" textFill="WHITE">
+                                       <font>
+                                          <Font size="17.0" />
+                                       </font>
+                                    </JFXButton>
+                                 </children>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <HBox.margin>
+                                    <Insets right="10.0" />
+                                 </HBox.margin>
+                              </AnchorPane>
+                              <AnchorPane layoutX="10.0" layoutY="10.0" style="-fx-background-color: white;">
+                                 <children>
+                                    <ImageView fitHeight="183.0" fitWidth="159.0" pickOnBounds="true" preserveRatio="true" />
+                                    <JFXButton layoutX="115.0" layoutY="5.0" onMouseClicked="#OpenForm" opacity="0.52" prefHeight="31.0" prefWidth="39.0" style="-fx-background-color: black;" text="+" textFill="WHITE">
+                                       <font>
+                                          <Font size="17.0" />
+                                       </font>
+                                    </JFXButton>
+                                 </children>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <HBox.margin>
+                                    <Insets right="10.0" />
+                                 </HBox.margin>
+                              </AnchorPane>
+                              <AnchorPane layoutX="179.0" layoutY="10.0" style="-fx-background-color: white;">
+                                 <children>
+                                    <ImageView fitHeight="183.0" fitWidth="159.0" pickOnBounds="true" preserveRatio="true" />
+                                    <JFXButton layoutX="115.0" layoutY="5.0" onMouseClicked="#OpenForm" opacity="0.52" prefHeight="31.0" prefWidth="39.0" style="-fx-background-color: black;" text="+" textFill="WHITE">
+                                       <font>
+                                          <Font size="17.0" />
+                                       </font>
+                                    </JFXButton>
+                                 </children>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                              </AnchorPane>
+                              <AnchorPane layoutX="348.0" layoutY="10.0" style="-fx-background-color: white;">
+                                 <children>
+                                    <ImageView fitHeight="183.0" fitWidth="159.0" pickOnBounds="true" preserveRatio="true" />
+                                    <JFXButton layoutX="115.0" layoutY="5.0" onMouseClicked="#OpenForm" opacity="0.52" prefHeight="31.0" prefWidth="39.0" style="-fx-background-color: black;" text="+" textFill="WHITE">
+                                       <font>
+                                          <Font size="17.0" />
+                                       </font>
+                                    </JFXButton>
+                                 </children>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </AnchorPane>
+                           </children>
+                        </HBox>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </ScrollPane>
+            <ScrollPane fx:id="pnl_series" prefWidth="797.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <content>
+                  <AnchorPane prefHeight="784.0" prefWidth="797.0" style="-fx-background-color: linear-gradient(#000000,#434343);">
+                     <children>
+                        <Label layoutX="39.0" layoutY="36.0" text="Series" textFill="WHITE">
+                           <font>
+                              <Font name="CoolveticaRg-Regular" size="25.0" />
+                           </font>
+                        </Label>
+                        <HBox layoutX="70.0" layoutY="95.0">
+                           <children>
+                              <AnchorPane style="-fx-background-color: white;">
+                                 <children>
+                                    <ImageView fx:id="series1" fitHeight="183.0" fitWidth="159.0" pickOnBounds="true" preserveRatio="true" />
+                                    <JFXButton layoutX="115.0" layoutY="5.0" onMouseClicked="#OpenForm" opacity="0.52" prefHeight="31.0" prefWidth="39.0" style="-fx-background-color: black;" text="+" textFill="WHITE">
+                                       <font>
+                                          <Font size="17.0" />
+                                       </font>
+                                    </JFXButton>
+                                 </children>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <HBox.margin>
+                                    <Insets right="10.0" />
+                                 </HBox.margin>
+                              </AnchorPane>
+                              <AnchorPane layoutX="10.0" layoutY="10.0" style="-fx-background-color: white;">
+                                 <children>
+                                    <ImageView fx:id="series2" fitHeight="183.0" fitWidth="159.0" pickOnBounds="true" preserveRatio="true" />
+                                    <JFXButton layoutX="115.0" layoutY="5.0" onMouseClicked="#OpenForm" opacity="0.52" prefHeight="31.0" prefWidth="39.0" style="-fx-background-color: black;" text="+" textFill="WHITE">
+                                       <font>
+                                          <Font size="17.0" />
+                                       </font>
+                                    </JFXButton>
+                                 </children>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <HBox.margin>
+                                    <Insets right="10.0" />
+                                 </HBox.margin>
+                              </AnchorPane>
+                              <AnchorPane layoutX="179.0" layoutY="10.0" style="-fx-background-color: white;">
+                                 <children>
+                                    <ImageView fx:id="series3" fitHeight="183.0" fitWidth="159.0" pickOnBounds="true" preserveRatio="true" />
+                                    <JFXButton layoutX="115.0" layoutY="5.0" onMouseClicked="#OpenForm" opacity="0.52" prefHeight="31.0" prefWidth="39.0" style="-fx-background-color: black;" text="+" textFill="WHITE">
+                                       <font>
+                                          <Font size="17.0" />
+                                       </font>
+                                    </JFXButton>
+                                 </children>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                              </AnchorPane>
+                              <AnchorPane layoutX="348.0" layoutY="10.0" style="-fx-background-color: white;">
+                                 <children>
+                                    <ImageView fx:id="series4" fitHeight="183.0" fitWidth="159.0" pickOnBounds="true" preserveRatio="true" />
+                                    <JFXButton layoutX="115.0" layoutY="5.0" onMouseClicked="#OpenForm" opacity="0.52" prefHeight="31.0" prefWidth="39.0" style="-fx-background-color: black;" text="+" textFill="WHITE">
+                                       <font>
+                                          <Font size="17.0" />
+                                       </font>
+                                    </JFXButton>
+                                 </children>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </AnchorPane>
+                           </children>
+                        </HBox>
+                        <HBox layoutX="70.0" layoutY="295.0">
+                           <children>
+                              <AnchorPane style="-fx-background-color: white;">
+                                 <children>
+                                    <ImageView fitHeight="183.0" fitWidth="159.0" pickOnBounds="true" preserveRatio="true" />
+                                    <JFXButton layoutX="115.0" layoutY="5.0" onMouseClicked="#OpenForm" opacity="0.52" prefHeight="31.0" prefWidth="39.0" style="-fx-background-color: black;" text="+" textFill="WHITE">
+                                       <font>
+                                          <Font size="17.0" />
+                                       </font>
+                                    </JFXButton>
+                                 </children>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <HBox.margin>
+                                    <Insets right="10.0" />
+                                 </HBox.margin>
+                              </AnchorPane>
+                              <AnchorPane layoutX="10.0" layoutY="10.0" style="-fx-background-color: white;">
+                                 <children>
+                                    <ImageView fitHeight="183.0" fitWidth="159.0" pickOnBounds="true" preserveRatio="true" />
+                                    <JFXButton layoutX="115.0" layoutY="5.0" onMouseClicked="#OpenForm" opacity="0.52" prefHeight="31.0" prefWidth="39.0" style="-fx-background-color: black;" text="+" textFill="WHITE">
+                                       <font>
+                                          <Font size="17.0" />
+                                       </font>
+                                    </JFXButton>
+                                 </children>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <HBox.margin>
+                                    <Insets right="10.0" />
+                                 </HBox.margin>
+                              </AnchorPane>
+                              <AnchorPane layoutX="179.0" layoutY="10.0" style="-fx-background-color: white;">
+                                 <children>
+                                    <ImageView fitHeight="183.0" fitWidth="159.0" pickOnBounds="true" preserveRatio="true" />
+                                    <JFXButton layoutX="115.0" layoutY="5.0" onMouseClicked="#OpenForm" opacity="0.52" prefHeight="31.0" prefWidth="39.0" style="-fx-background-color: black;" text="+" textFill="WHITE">
+                                       <font>
+                                          <Font size="17.0" />
+                                       </font>
+                                    </JFXButton>
+                                 </children>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                              </AnchorPane>
+                              <AnchorPane layoutX="348.0" layoutY="10.0" style="-fx-background-color: white;">
+                                 <children>
+                                    <ImageView fitHeight="183.0" fitWidth="159.0" pickOnBounds="true" preserveRatio="true" />
+                                    <JFXButton layoutX="115.0" layoutY="5.0" onMouseClicked="#OpenForm" opacity="0.52" prefHeight="31.0" prefWidth="39.0" style="-fx-background-color: black;" text="+" textFill="WHITE">
+                                       <font>
+                                          <Font size="17.0" />
+                                       </font>
+                                    </JFXButton>
+                                 </children>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </AnchorPane>
+                           </children>
+                        </HBox>
+                        <HBox layoutX="70.0" layoutY="493.0">
+                           <children>
+                              <AnchorPane style="-fx-background-color: white;">
+                                 <children>
+                                    <ImageView fitHeight="183.0" fitWidth="159.0" pickOnBounds="true" preserveRatio="true" />
+                                    <JFXButton layoutX="115.0" layoutY="5.0" onMouseClicked="#OpenForm" opacity="0.52" prefHeight="31.0" prefWidth="39.0" style="-fx-background-color: black;" text="+" textFill="WHITE">
+                                       <font>
+                                          <Font size="17.0" />
+                                       </font>
+                                    </JFXButton>
+                                 </children>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <HBox.margin>
+                                    <Insets right="10.0" />
+                                 </HBox.margin>
+                              </AnchorPane>
+                              <AnchorPane layoutX="10.0" layoutY="10.0" style="-fx-background-color: white;">
+                                 <children>
+                                    <ImageView fitHeight="183.0" fitWidth="159.0" pickOnBounds="true" preserveRatio="true" />
+                                    <JFXButton layoutX="115.0" layoutY="5.0" onMouseClicked="#OpenForm" opacity="0.52" prefHeight="31.0" prefWidth="39.0" style="-fx-background-color: black;" text="+" textFill="WHITE">
+                                       <font>
+                                          <Font size="17.0" />
+                                       </font>
+                                    </JFXButton>
+                                 </children>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <HBox.margin>
+                                    <Insets right="10.0" />
+                                 </HBox.margin>
+                              </AnchorPane>
+                              <AnchorPane layoutX="179.0" layoutY="10.0" style="-fx-background-color: white;">
+                                 <children>
+                                    <ImageView fitHeight="183.0" fitWidth="159.0" pickOnBounds="true" preserveRatio="true" />
+                                    <JFXButton layoutX="115.0" layoutY="5.0" onMouseClicked="#OpenForm" opacity="0.52" prefHeight="31.0" prefWidth="39.0" style="-fx-background-color: black;" text="+" textFill="WHITE">
+                                       <font>
+                                          <Font size="17.0" />
+                                       </font>
+                                    </JFXButton>
+                                 </children>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                              </AnchorPane>
+                              <AnchorPane layoutX="348.0" layoutY="10.0" style="-fx-background-color: white;">
+                                 <children>
+                                    <ImageView fitHeight="183.0" fitWidth="159.0" pickOnBounds="true" preserveRatio="true" />
+                                    <JFXButton layoutX="115.0" layoutY="5.0" onMouseClicked="#OpenForm" opacity="0.52" prefHeight="31.0" prefWidth="39.0" style="-fx-background-color: black;" text="+" textFill="WHITE">
+                                       <font>
+                                          <Font size="17.0" />
+                                       </font>
+                                    </JFXButton>
+                                 </children>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </AnchorPane>
+                           </children>
+                        </HBox>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </ScrollPane>
+            <ScrollPane fx:id="pnl_movies" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <content>
+                  <AnchorPane prefHeight="719.0" prefWidth="797.0" style="-fx-background-color: linear-gradient(#000000,#434343);">
+                     <children>
+                        <Label layoutX="39.0" layoutY="36.0" text="Movies" textFill="WHITE">
+                           <font>
+                              <Font name="CoolveticaRg-Regular" size="25.0" />
+                           </font>
+                        </Label>
+                        <HBox layoutX="63.0" layoutY="97.0">
+                           <children>
+                              <AnchorPane style="-fx-background-color: white;">
+                                 <children>
+                                    <ImageView fx:id="movie1" fitHeight="183.0" fitWidth="159.0" pickOnBounds="true" preserveRatio="true" />
+                                    <JFXButton layoutX="115.0" layoutY="5.0" onMouseClicked="#OpenForm" opacity="0.52" prefHeight="31.0" prefWidth="39.0" style="-fx-background-color: black;" text="+" textFill="WHITE">
+                                       <font>
+                                          <Font size="17.0" />
+                                       </font>
+                                    </JFXButton>
+                                 </children>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <HBox.margin>
+                                    <Insets right="10.0" />
+                                 </HBox.margin>
+                              </AnchorPane>
+                              <AnchorPane layoutX="10.0" layoutY="10.0" style="-fx-background-color: white;">
+                                 <children>
+                                    <ImageView fx:id="movie2" fitHeight="183.0" fitWidth="159.0" pickOnBounds="true" preserveRatio="true" />
+                                    <JFXButton layoutX="115.0" layoutY="5.0" onMouseClicked="#OpenForm" opacity="0.52" prefHeight="31.0" prefWidth="39.0" style="-fx-background-color: black;" text="+" textFill="WHITE">
+                                       <font>
+                                          <Font size="17.0" />
+                                       </font>
+                                    </JFXButton>
+                                 </children>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <HBox.margin>
+                                    <Insets right="10.0" />
+                                 </HBox.margin>
+                              </AnchorPane>
+                              <AnchorPane layoutX="179.0" layoutY="10.0" style="-fx-background-color: white;">
+                                 <children>
+                                    <ImageView fx:id="movie3" fitHeight="183.0" fitWidth="159.0" pickOnBounds="true" preserveRatio="true" />
+                                    <JFXButton layoutX="115.0" layoutY="5.0" onMouseClicked="#OpenForm" opacity="0.52" prefHeight="31.0" prefWidth="39.0" style="-fx-background-color: black;" text="+" textFill="WHITE">
+                                       <font>
+                                          <Font size="17.0" />
+                                       </font>
+                                    </JFXButton>
+                                 </children>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                              </AnchorPane>
+                              <AnchorPane layoutX="348.0" layoutY="10.0" style="-fx-background-color: white;">
+                                 <children>
+                                    <ImageView fx:id="movie4" fitHeight="183.0" fitWidth="159.0" pickOnBounds="true" preserveRatio="true" />
+                                    <JFXButton layoutX="115.0" layoutY="5.0" onMouseClicked="#OpenForm" opacity="0.52" prefHeight="31.0" prefWidth="39.0" style="-fx-background-color: black;" text="+" textFill="WHITE">
+                                       <font>
+                                          <Font size="17.0" />
+                                       </font>
+                                    </JFXButton>
+                                 </children>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </AnchorPane>
+                           </children>
+                        </HBox>
+                        <HBox layoutX="63.0" layoutY="292.0">
+                           <children>
+                              <AnchorPane style="-fx-background-color: white;">
+                                 <children>
+                                    <ImageView fitHeight="183.0" fitWidth="159.0" pickOnBounds="true" preserveRatio="true" />
+                                    <JFXButton layoutX="115.0" layoutY="5.0" onMouseClicked="#OpenForm" opacity="0.52" prefHeight="31.0" prefWidth="39.0" style="-fx-background-color: black;" text="+" textFill="WHITE">
+                                       <font>
+                                          <Font size="17.0" />
+                                       </font>
+                                    </JFXButton>
+                                 </children>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <HBox.margin>
+                                    <Insets right="10.0" />
+                                 </HBox.margin>
+                              </AnchorPane>
+                              <AnchorPane layoutX="10.0" layoutY="10.0" style="-fx-background-color: white;">
+                                 <children>
+                                    <ImageView fitHeight="183.0" fitWidth="159.0" pickOnBounds="true" preserveRatio="true" />
+                                    <JFXButton layoutX="115.0" layoutY="5.0" onMouseClicked="#OpenForm" opacity="0.52" prefHeight="31.0" prefWidth="39.0" style="-fx-background-color: black;" text="+" textFill="WHITE">
+                                       <font>
+                                          <Font size="17.0" />
+                                       </font>
+                                    </JFXButton>
+                                 </children>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <HBox.margin>
+                                    <Insets right="10.0" />
+                                 </HBox.margin>
+                              </AnchorPane>
+                              <AnchorPane layoutX="179.0" layoutY="10.0" style="-fx-background-color: white;">
+                                 <children>
+                                    <ImageView fitHeight="183.0" fitWidth="159.0" pickOnBounds="true" preserveRatio="true" />
+                                    <JFXButton layoutX="115.0" layoutY="5.0" onMouseClicked="#OpenForm" opacity="0.52" prefHeight="31.0" prefWidth="39.0" style="-fx-background-color: black;" text="+" textFill="WHITE">
+                                       <font>
+                                          <Font size="17.0" />
+                                       </font>
+                                    </JFXButton>
+                                 </children>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                              </AnchorPane>
+                              <AnchorPane layoutX="348.0" layoutY="10.0" style="-fx-background-color: white;">
+                                 <children>
+                                    <ImageView fitHeight="183.0" fitWidth="159.0" pickOnBounds="true" preserveRatio="true" />
+                                    <JFXButton layoutX="115.0" layoutY="5.0" onMouseClicked="#OpenForm" opacity="0.52" prefHeight="31.0" prefWidth="39.0" style="-fx-background-color: black;" text="+" textFill="WHITE">
+                                       <font>
+                                          <Font size="17.0" />
+                                       </font>
+                                    </JFXButton>
+                                 </children>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </AnchorPane>
+                           </children>
+                        </HBox>
+                        <HBox layoutX="64.0" layoutY="486.0">
+                           <children>
+                              <AnchorPane style="-fx-background-color: white;">
+                                 <children>
+                                    <ImageView fitHeight="183.0" fitWidth="159.0" pickOnBounds="true" preserveRatio="true" />
+                                    <JFXButton layoutX="115.0" layoutY="5.0" onMouseClicked="#OpenForm" opacity="0.52" prefHeight="31.0" prefWidth="39.0" style="-fx-background-color: black;" text="+" textFill="WHITE">
+                                       <font>
+                                          <Font size="17.0" />
+                                       </font>
+                                    </JFXButton>
+                                 </children>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <HBox.margin>
+                                    <Insets right="10.0" />
+                                 </HBox.margin>
+                              </AnchorPane>
+                              <AnchorPane layoutX="10.0" layoutY="10.0" style="-fx-background-color: white;">
+                                 <children>
+                                    <ImageView fitHeight="183.0" fitWidth="159.0" pickOnBounds="true" preserveRatio="true" />
+                                    <JFXButton layoutX="115.0" layoutY="5.0" onMouseClicked="#OpenForm" opacity="0.52" prefHeight="31.0" prefWidth="39.0" style="-fx-background-color: black;" text="+" textFill="WHITE">
+                                       <font>
+                                          <Font size="17.0" />
+                                       </font>
+                                    </JFXButton>
+                                 </children>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <HBox.margin>
+                                    <Insets right="10.0" />
+                                 </HBox.margin>
+                              </AnchorPane>
+                              <AnchorPane layoutX="179.0" layoutY="10.0" style="-fx-background-color: white;">
+                                 <children>
+                                    <ImageView fitHeight="183.0" fitWidth="159.0" pickOnBounds="true" preserveRatio="true" />
+                                    <JFXButton layoutX="115.0" layoutY="5.0" onMouseClicked="#OpenForm" opacity="0.52" prefHeight="31.0" prefWidth="39.0" style="-fx-background-color: black;" text="+" textFill="WHITE">
+                                       <font>
+                                          <Font size="17.0" />
+                                       </font>
+                                    </JFXButton>
+                                 </children>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                              </AnchorPane>
+                              <AnchorPane layoutX="348.0" layoutY="10.0" style="-fx-background-color: white;">
+                                 <children>
+                                    <ImageView fitHeight="183.0" fitWidth="159.0" pickOnBounds="true" preserveRatio="true" />
+                                    <JFXButton layoutX="115.0" layoutY="5.0" onMouseClicked="#OpenForm" opacity="0.52" prefHeight="31.0" prefWidth="39.0" style="-fx-background-color: black;" text="+" textFill="WHITE">
+                                       <font>
+                                          <Font size="17.0" />
+                                       </font>
+                                    </JFXButton>
+                                 </children>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </AnchorPane>
+                           </children>
+                        </HBox>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </ScrollPane>
+            <AnchorPane fx:id="pnl_home" prefHeight="591.0" prefWidth="797.0" style="-fx-background-color: linear-gradient(#000000,#434343);" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <ImageView fitHeight="33.0" fitWidth="74.0" layoutX="379.0" layoutY="57.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/lappy_1.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="33.0" fitWidth="41.0" layoutX="386.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/Crown.png" />
+                     </image>
+                  </ImageView>
+                  <AnchorPane layoutX="230.0" layoutY="96.0" prefHeight="442.0" prefWidth="362.0" style="-fx-background-color: white; -fx-background-radius: 7;">
+                     <children>
+                        <Label layoutX="31.0" layoutY="248.0" text="Video Title">
+                           <font>
+                              <Font name="CoolveticaRg-Regular" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="40.0" layoutY="292.0" text="Selection">
+                           <font>
+                              <Font name="CoolveticaRg-Regular" size="18.0" />
+                           </font>
+                        </Label>
+                        <Button layoutX="57.0" layoutY="347.0" mnemonicParsing="false" onMouseClicked="#select_File" prefHeight="32.0" prefWidth="118.0" style="-fx-background-color: #333333;" text="Select File" textFill="WHITE">
+                           <font>
+                              <Font name="CoolveticaRg-Regular" size="13.0" />
+                           </font>
+                        </Button>
+                        <Button layoutX="186.0" layoutY="347.0" mnemonicParsing="false" onMouseClicked="#upload" prefHeight="32.0" prefWidth="118.0" style="-fx-background-color: #ffee58;" text="Upload" textFill="#1b1a1a">
+                           <font>
+                              <Font name="CoolveticaRg-Regular" size="13.0" />
+                           </font>
+                        </Button>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="111.0" layoutY="69.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../images/comedy.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="65.0" layoutY="27.0" text="Upload Video">
+                           <font>
+                              <Font name="CoolveticaRg-Regular" size="20.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="40.0" fitWidth="39.0" layoutX="20.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../images/vid.png" />
+                           </image>
+                        </ImageView>
+                        <JFXTextField fx:id="txtTitle" focusColor="#88c234" layoutX="124.0" layoutY="239.0" prefHeight="25.0" prefWidth="206.0">
+                           <font>
+                              <Font name="CoolveticaRg-Regular" size="15.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXComboBox fx:id="cmbSelection" focusColor="#88c234" layoutX="124.0" layoutY="283.0" prefHeight="25.0" prefWidth="208.0" />
+                        <JFXButton layoutX="149.0" layoutY="117.0" onMouseClicked="#uploadPicture" opacity="0.52" prefHeight="68.0" prefWidth="72.0" style="-fx-background-color: white;" text="+" textFill="#4a5c4a">
+                           <font>
+                              <Font size="33.0" />
+                           </font>
+                        </JFXButton>
+                        <Label fx:id="lblUpload" layoutX="136.0" layoutY="319.0" text="Ready to upload!" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="22.0" fitWidth="22.0" layoutX="1004.0" layoutY="11.0" onMouseClicked="#close_app" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="19.0">
+         <image>
+            <Image url="@../../images/minimizee.png" />
+         </image>
+      </ImageView>
+      <ImageView id="maximize" fitHeight="22.0" fitWidth="22.0" layoutX="976.0" layoutY="11.0" onMouseClicked="#maximize" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="47.0">
+         <image>
+            <Image url="@../../images/maximizee.png" />
+         </image>
+      </ImageView>
+      <ImageView id="minimize" fx:id="minimize" fitHeight="22.0" fitWidth="22.0" layoutX="948.0" layoutY="11.0" onMouseClicked="#minimize" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="75.0">
+         <image>
+            <Image url="@../../images/close.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
